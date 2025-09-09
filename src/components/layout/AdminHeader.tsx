@@ -66,6 +66,16 @@ export const AdminHeader: React.FC = () => {
       title: 'Audit Logs',
       path: '/admin/audit',
       icon: FileSearch
+    },
+    {
+      title: 'Notifications',
+      path: '/admin/notifications',
+      icon: Bell
+    },
+    {
+      title: 'Settings',
+      path: '/admin/settings',
+      icon: Settings
     }
   ];
 
@@ -148,7 +158,7 @@ export const AdminHeader: React.FC = () => {
             <span className="text-xs">Online</span>
           </Badge>
 
-          <Button variant="outline" size="sm" className="relative">
+          <Button variant="outline" size="sm" className="relative" onClick={() => navigate('/admin/notifications')}>
             <Bell className="h-4 w-4" />
             <span className="hidden md:inline ml-2">Alerts</span>
             <Badge variant="destructive" className="absolute -top-1 -right-1 h-5 w-5 text-xs p-0 flex items-center justify-center">7</Badge>

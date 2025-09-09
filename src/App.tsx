@@ -31,6 +31,8 @@ import AdminAlerts from "./pages/admin/AdminAlerts";
 import AdminIncidents from "./pages/admin/AdminIncidents";
 import AdminAnalytics from "./pages/admin/AdminAnalytics";
 import AdminAudit from "./pages/admin/AdminAudit";
+import AdminNotifications from "./pages/admin/AdminNotifications";
+import AdminSettings from "./pages/admin/AdminSettings";
 
 function AppContent() {
   const { setOnlineStatus, isOnline } = useAppStore();
@@ -84,6 +86,8 @@ function AppContent() {
         <Route path="/admin/incidents" element={<AdminIncidents />} />
         <Route path="/admin/analytics" element={<AdminAnalytics />} />
         <Route path="/admin/audit" element={<AdminAudit />} />
+        <Route path="/admin/notifications" element={<AdminNotifications />} />
+        <Route path="/admin/settings" element={<AdminSettings />} />
         
         <Route path="*" element={<NotFound />} />
       </Routes>
